@@ -1,60 +1,58 @@
 # Pneumonia-Detection-with-CNN
 
-Bu proje, bir görüntü işleme dersi kapsamında geliştirilen ve göğüs röntgeni (chest X-ray) görüntüleri üzerinde konvolüsyonel sinir ağı (CNN) kullanarak pnömoni (zatürre) tespiti yapan bir modeldir.
+This project was developed as part of an image processing course and implements a Convolutional Neural Network (CNN) model to detect pneumonia from chest X-ray images.
 
 ---
 
-## 🎯 Proje Amacı
+## 🎯 Project Objectives
 
-- Göğüs röntgeni görüntülerini kullanarak pnömoni (zatürre) ve sağlıklı (normal) sınıflandırması yapmak.
-- CNN tabanlı bir model eğitmek ve değerlendirmek.
-- Modelin doğruluk, hassasiyet (precision), geri çağırma (recall) ve F1 skor gibi performans ölçülerini analiz etmek.
-
----
-
-## 🧠 Kullanılan Teknikler
-
-- Konvolüsyonel Sinir Ağı (CNN) mimarisi (kendi tanımladığınız veya basit bir örnek yapı).
-- Veri ön işleme: yeniden boyutlandırma, normalize etme, sınıf dengesi.
-- Eğitim, doğrulama ve test veri setleri (Kaggle'daki “Chest X-Ray (Pneumonia)” veri kümesi kullanılmıştır).
-- Model performans değerlendirme metrikleri: Accuracy, Precision, Recall ve F1-Score.
+- Classify chest X-ray images into pneumonia and healthy (normal) categories.
+- Train and evaluate a CNN-based model.
+- Analyze model performance using accuracy, precision, recall, and F1 score metrics.
 
 ---
 
-## 🎯 Performans (Örnek)
+## 🧠 Techniques Used
 
-Test veri seti üzerinde model performansı:
+- Convolutional Neural Network (CNN) architecture (custom or simple example model).
+- Data preprocessing: resizing, normalization, class balancing.
+- Training, validation, and test datasets (using Kaggle’s “Chest X-Ray (Pneumonia)” dataset).
+- Model performance metrics: Accuracy, Precision, Recall, and F1-Score.
 
-| Metrik                     | Değer  |
+---
+
+## 🎯 Performance (Example)
+
+Model performance on the test dataset:
+
+| Metric                     | Value  |
 |----------------------------|--------|
-| Accuracy                   | %95    |
-| Precision (Pnömoni sınıfı) | %94    |
-| Recall                     | %93    |
-| F1-Score                   | %93.5  |
+| Accuracy                   | 95%    |
+| Precision (Pneumonia class) | 94%    |
+| Recall                     | 93%    |
+| F1-Score                   | 93.5%  |
 
 ---
 
-## ⚠️ Dataset Kaynağı
+## ⚠️ Dataset Source
 
-- Veri seti: Kaggle “Chest X-Ray Images (Pneumonia)”
-- Yaklaşık 5.800 röntgen görüntüsü içerir.
-- İki sınıf: “Pneumonia” ve “Normal”.
-
----
-
-## 🔧 Geliştirme ve Özelleştirme Fırsatları
-
-- Farklı CNN mimarileri (örneğin ResNet, VGG, DenseNet) veya transfer learning teknikleri uygulanabilir.
-- Veri artırımı (augmentation) ile overfitting önlenebilir.
-- Grad-CAM veya SHAP gibi XAI teknikleriyle model açıklanabilirliği geliştirilebilir.
-- Model bir web uygulamasına (Flask, Streamlit ile) entegre edilebilir.
+- Dataset: Kaggle “Chest X-Ray Images (Pneumonia)”
+- Contains approximately 5,800 X-ray images.
+- Two classes: “Pneumonia” and “Normal”.
 
 ---
 
-## 📚 Kaynaklar / Referanslar
+## 🔧 Development and Customization Opportunities
 
-- Transfer learning ile pnömoni tespiti: AlexNet, ResNet18, DenseNet201 gibi modeller %98 doğruluk puanına ulaşmıştır (Arxiv, MDPI).
-- Modeller karşılaştırma çalışmaları: VGG19, ResNet-152 gibi mimariler %95 üzeri başarı sağlar (Arxiv).
-- Model açıklama yaklaşımları: Grad-CAM gibi teknikler ile görselleştirme yapılabilir (GitHub).
+- Different CNN architectures (e.g., ResNet, VGG, DenseNet) or transfer learning techniques can be applied.
+- Data augmentation can be used to prevent overfitting.
+- Explainability techniques like Grad-CAM or SHAP can improve model interpretability.
+- The model can be integrated into a web application (using Flask or Streamlit).
 
+---
 
+## 📚 References
+
+- Pneumonia detection with transfer learning: models like AlexNet, ResNet18, DenseNet201 have achieved up to 98% accuracy (Arxiv, MDPI).
+- Model comparison studies: architectures such as VGG19 and ResNet-152 achieve over 95% accuracy (Arxiv).
+- Model explanation approaches: visualization techniques like Grad-CAM (GitHub).
